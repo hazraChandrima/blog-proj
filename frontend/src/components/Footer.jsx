@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 
 export default function Footer() {
     return (
@@ -7,17 +9,17 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-md-4">
                             <h4>Contact Us</h4>
-                            <p>Email: info@example.com</p>
-                            <p>Phone: +1 (123) 456-7890</p>
+                            <p>Email: blogspace@ac.in</p>
+                            <p>Phone: +91 879 701 9446</p>
                         </div>
                         <div className="col-md-4">
                             <h4>Quick Links</h4>
                             <ul className="list-unstyled">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About Us</Link></li>
+                                <li><Link to="/">Services</Link></li>
+                                <li><Link to="/">Contact</Link></li>
+                                <li><Link to="/"></Link></li>
                             </ul>
                         </div>
                         <div className="col-md-4">

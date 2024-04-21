@@ -17,30 +17,28 @@ export default function Home() {
                             <div className="col-lg-6">
                                 <h1>Welcome to BlogSpace</h1>
                                 <p>Your go-to source for insightful articles and engaging content.</p>
-                                <a href="#" className="btn btn-primary">Read Our Latest Posts</a>
+                                <a href="/register" className="btn btn-primary">Create an account</a>
                             </div>
                             <div className="col-lg-6">
-                                <img src="https://via.placeholder.com/400" alt="Blog Introduction Image" className="img-fluid mt-3" />
+                                <img src="https://reputationtoday.in/wp-content/uploads/2020/04/bigstock-Blog-Blogging-Homepage-Social-134171063.jpg" alt="Blog Introduction Image" className="img-fluid mt-3" />
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <div className="container mt-4">
+                <div className="container mt-5">
                     <div className="row">
                         <div className="col-lg-8">
                             <h2>About Us</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et urna eget libero ultricies facilisis id vel ligula. Quisque sit amet enim ac ligula dapibus cursus. Nullam auctor varius erat, in dignissim ante auctor a.</p>
+                            <p>At BlogSpace, we believe in the power of storytelling to ignite change and foster growth. Our platform is dedicated to providing a diverse array of perspectives, insights, and practical advice to help you navigate lifes journey with confidence and resilience.</p>
 
                             <h2>Our Mission</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et urna eget libero ultricies facilisis id vel ligula. Quisque sit amet enim ac ligula dapibus cursus. Nullam auctor varius erat, in dignissim ante auctor a.</p>
+                            <p>At BlogSpace, our mission is to inspire, educate, and empower our readers to lead happier, healthier, and more fulfilling lives. Through insightful articles, practical tips, and engaging content, we strive to foster personal growth, promote positive change, and provide valuable resources for individuals seeking to improve various aspects of their lives. Whether youre looking for wellness advice, career guidance, or creative inspiration, our goal is to be your trusted companion on the journey towards self-discovery and holistic well-being. Join us as we explore the endless possibilities of personal development, cultivate meaningful connections, and celebrate the joy of living life to the fullest.</p>
                         </div>
 
                         <div className="col-lg-4">
-                            <div className="card my-4">
-                                <h5 className="card-header">Search</h5>
-                                <div className="card-body">
-                                </div>
+                            <div className="container mt-5">
+                            <img src="https://www.forbes.com/advisor/wp-content/uploads/2022/06/How_To_Start_A_Blog_-_article_image.jpg" alt="Blog Introduction Image" className="img-fluid mt-3" />
                             </div>
                         </div>
                     </div>

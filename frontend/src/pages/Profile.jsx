@@ -112,9 +112,17 @@ const Profile = () => {
                         </div >
                         <div className="col-lg-8 pt-4">
                             {/* <!-- Blog Post Loop --> */}
-                            {posts?.map((p) => (
-                            <ProfilePosts key={p._id} p={p} />
-                        ))}
+                            {/* {posts?.map((p) => (
+                            <ProfilePosts key={p._id} p={p} /> */}
+                           { posts.map((post) => (
+                                <>
+                                <Link to={user?`/posts/post/${post._id}`:"/login"}>
+                                <ProfilePosts key={post._id} post={post}/>
+                                </Link>
+                                </>
+                                
+                              )
+                        )}
                         </div>
                         {/* <!-- Sidebar --> */}
                         <div className="col-md-4 pt-4 pb-2">
@@ -131,10 +139,10 @@ const Profile = () => {
                                 <ul className="list-group list-group-flush">
                                 <li className="list-group-item"><input onChange={(e) => setUsername(e.target.value)} value={username} className="form-control" placeholder="Your username" type="text" /></li>
                                 <li className="list-group-item"><input onChange={(e) => setEmail(e.target.value)} value={email}className="form-control" placeholder="Your email" type="text" /></li>
-                                        <button onClick={handleUserUpdate} className="btn btn-secondary ms-3">Update</button>
-                                        <button onClick={handleUserDelete} className="btn btn-danger ms-3 my-3">Delete</button>
+                                        <button onClick={handleUserUpdate} className="btn btn-secondary mx-3">Update</button>
+                                        <button onClick={handleUserDelete} className="btn btn-danger mx-3 my-3">Delete</button>
                                 </ul>
-                                {updated && <h3 className="fw-normal">user updated successfully!</h3>}
+                                {updated && <h3 className=" mx-4">user updated successfully!</h3>}
                             </div>
                         </div>
                     </div>

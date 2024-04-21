@@ -6,14 +6,14 @@ import Register from './pages/Register';
 import PostDetails from './pages/PostDetails'
 import CreatePost from './pages/CreatePost';
 import EditPost from './pages/EditPost';
-import {  UserContextProvider } from './context/UserContext';
+import {UserContextProvider } from './context/UserContext';
 import {
   Route, Routes,
 } from "react-router-dom";
 
 function App() {
   return ( 
-    <>
+    <> 
     <UserContextProvider>
       <Routes>
       <Route exact path="/" element={<Home/>}/>

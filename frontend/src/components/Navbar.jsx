@@ -7,7 +7,7 @@ import { URL } from "../url"
 export default function Navbar() {
     const {user}=useContext(UserContext)
     const {setUser}=useContext(UserContext)
-const navigate=useNavigate()
+    const navigate=useNavigate()
 
 
     const handleLogout=async()=>{

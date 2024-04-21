@@ -28,11 +28,11 @@ export default function PostDetails() {
     }
 
     const handleDeletePost = async (e) => {
-e.preventDefault();
+        e.preventDefault();
         try {
             const res = await axios.delete(URL + "/api/posts/" + postId, { withCredentials: true })
             console.log(res.data)
-            navigate("/profile/"+res.user._id)
+            navigate("/profile/"+user._id)
 
         }
         catch (err) {
@@ -54,8 +54,6 @@ e.preventDefault();
                         <h1 className="display-4">{post.title}</h1>
                         <p className="lead">Published by {post.username} on August 15, 2024</p>
                     </header>
-                    {/* <!-- Featured Image --> */}
-                    <img className="img-fluid rounded my-5 mx-auto d-block" src="https://via.placeholder.com/800x400" alt="Featured Image" />
                     {/* <!-- Blog Post Content --> */}
                     <div className="mt-4">
                         <p>{post.desc}</p>

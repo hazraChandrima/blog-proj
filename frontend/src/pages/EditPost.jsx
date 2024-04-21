@@ -66,7 +66,7 @@ const EditPost = () => {
               </div>
               <div className="form-group mb-3">
                 <label htmlFor="postContent">Content:</label>
-                <textarea onChange={(e)=>setDesc(e.target.value)} className="form-control" id="postContent" rows="5" placeholder="Write your blog post content here" required></textarea>
+                <textarea onChange={(e)=>setDesc(e.target.value)} value={desc} className="form-control" id="postContent" rows="5" placeholder="Write your blog post content here" required></textarea>
               </div>
               <button onClick={handleUpdate} className="btn btn-primary btn-block">Update Post</button>
             </form>
